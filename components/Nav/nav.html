@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="/components/Nav/nav.css">
+    <link rel="stylesheet" href="/css/global-styles.css">
+    <script src="/components/nav/nav.js" defer></script>
+    <title>Nav menu Component</title>
+</head>
+<body>
+
+<!-- Navigation Section -->
+<header>
+    <nav class="nav-section">
+        <div class="nav-container">
+            <div class="nav-row">
+
+                <!-- Column 1: Logo -->
+                <div class="nav-col logo-col">
+                    <span class="nav-logo-text">MarketMinds</span>
+                </div>
+
+                <!-- Column 2: Main Menu -->
+                <div class="nav-col menu-col">
+                    <ul class="nav-list">
+                        <li><a href="/">Home</a></li>
+
+                        <!-- Services Menu Item with Mega Menu -->
+                        <li>
+                            <a href="#">Services</a>
+                            <div class="mega-menu">
+                                <div class="mega-menu-row">
+                                    <div class="mega-menu-col">
+                                        <h4>SEO</h4>
+                                        <ul>
+                                            <li><a href="/Services/Seo/keyword-research.html">Keyword Research</a></li>
+                                            <li><a href="/Services/Seo/Link-building.html">Link Building</a></li>
+                                            <li><a href="/Services/Seo/on-page-optimization.html">On-Page SEO</a></li>
+                                            <li><a href="/Services/Seo/local-seo.html">Local SEO</a></li>
+                                            <li><a href="/Services/Seo/technical-audits.html">Technical SEO</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="mega-menu-col">
+                                        <h4>Content Marketing</h4>
+                                        <ul>
+                                            <li><a href="/Services/Content-marketing/blog-writing.html">Blog Writing</a></li>
+                                            <li><a href="/Services/Content-marketing/ebooks-whitepapers.html">Ebooks & White Papers</a></li>
+                                            <li><a href="/Services/Content-marketing/infographics.html">Infographics</a></li>
+                                            <li><a href="/Services/Content-marketing/video-content.html">Video Content</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="mega-menu-col">
+                                        <h4>Social Media Management</h4>
+                                        <ul>
+                                            <li><a href="#">Social Media Ads</a></li>
+                                            <li><a href="#">Content Scheduling</a></li>
+                                            <li><a href="#">Social Strategy</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="mega-menu-col">
+                                        <h4><i class="fas fa-tags"> Special Offer!</i></h4>
+                                        <ul>
+                                            <li><a href="/Services/CRO/">CRO Services</a></li>
+                                            <li><a href="/Services/PPC/">PPC Services</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+
+                        <!-- Pricing Menu Item with Mega Menu -->
+                        <li>
+                            <a href="#">Pricing</a>
+                            <div class="mega-menu">
+                                <div class="mega-menu-row">
+                                    <div class="mega-menu-col">
+                                        <ul>
+                                            <li><a href="/Pricing/seo.html">SEO Pricing</a></li>
+                                            <li><a href="/Pricing/email.html">Email Marketing Pricing</a></li>
+                                            <li><a href="/Pricing/content-marketing.html">Content Marketing Pricing</a></li>
+                                            <li><a href="/Pricing/ppc.html">PPC Pricing</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="mega-menu-col">
+                                        <ul>
+                                            <li><a href="/Pricing/cro.html">CRO Pricing</a></li>
+                                            <li><a href="/Pricing/social-media.html">Social Media Pricing</a></li>
+                                            <li><a href="/Pricing/business-planning.html">Strategy & Business Planning</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="mega-menu-col">
+                                        <div class="cta-container" >
+                                            <button class="primary-btn">
+                                                Request Monthly Package
+                                            </button>
+                                            <p class="discount-text">
+                                                *Custom discounts available on request.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li><a href="#">Resources</a>
+                        <!-- Drop menu -->
+                        <div class="dropDown-container">
+                            <ul class="dropdown-menu">
+                                <li><a href="/blog">Blog</a></li>
+                                <li><a href="/case-studies">Case Studies</a></li>
+                                <li><a href="/artciles">Articles</a></li>
+                            </ul>
+                        </div>
+                        </li>
+                        <li><a href="/company/about.html">About</a></li>
+                        <li><a href="/company/contact.html">Contact</a></li>
+                    </ul>
+                </div>
+
+                <!-- Column 3: Icons -->
+                <div class="nav-col icon-col">
+                    <i class="fas fa-bars mobile-menu-icon" id="menu-open-icon"></i>
+                    <i class="fas fa-times mobile-menu-icon" id="menu-close-icon" style="display: none;"></i>
+                </div>
+
+            </div>
+        </div>
+    </nav>
+</header>
+
+</body>
+</html>

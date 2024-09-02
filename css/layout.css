@@ -1,0 +1,28 @@
+/* Import dependecy css files */
+@import url('/css/css-helper.css');
+
+.main-container {
+  flex: 1;
+  display: flex;
+  width: 100%;
+}
+
+
+.inner-container {
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 0 24px !important;
+}
+
+
+.full-width-content {
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100vw;
+  background-color: #ffcc00;
+  padding: 20px;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+

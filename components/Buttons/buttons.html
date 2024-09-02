@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="/css/global-styles.css">
+</head>
+<body>
+  <button class="primary-btn">Primary Button</button>
+<button class="secondary-btn">Secondary Button</button>
+<button class="highlight-btn">Highlight Button</button>
+
+
+<style>
+  /* Primary Button - Solid with hover effect */
+.primary-btn {
+  background-color: var(--primarycta);
+  color:var(--primarycta-text-color);
+  padding: 10px 20px;
+  margin: 10px;
+  border: none;
+  border-radius: 5px;
+  font-weight: 600;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.primary-btn:hover {
+  background-color: var(--primarycta-hover); /* Darker shade on hover */
+}
+
+/* Secondary Button - Outline with secondary color */
+.secondary-btn {
+  background-color: var(--secondarycta);
+  color: var(--secondarycta-text-color);
+  padding: 10px 20px;
+  margin: 10px;
+  border: 2px solid var(--secondary-color);
+  border-radius: 5px;
+  font-weight: 600;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.secondary-btn:hover {
+  background-color: var(--secondary-color); /* Fill with secondary color on hover */
+  color: #FFFFFF; /* Change text color to white */
+}
+
+/* Highlight Button - Special CTA using highlight color */
+.highlight-btn {
+  background-color: var(--read-more-color); /* Using highlight color */
+  color: var(--read-more-text-color); /* Dark text */
+  padding: 10px 20px;
+  margin: 10px;
+  border: none;
+  border-radius: 5px;
+  font-weight: 600;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.highlight-btn:hover {
+  background-color: #FFCA28;
+  transform: scale(1.05);
+}
+
+</style>
+</body>
+</html>

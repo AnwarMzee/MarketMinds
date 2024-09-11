@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <!-- Home Page -->
+  <sitemap>
+    <loc>https://marketminds-3d569.firebaseapp.com/</loc>
+    <lastmod>2024-09-11</lastmod>
+  </sitemap>
+
+  <!-- Services Section -->
+  <sitemap>
+    <loc>https://marketminds-3d569.firebaseapp.com/Services/Seo/keyword-research.html</loc>
+  </sitemap>
+  <sitemap>
+    <loc>https://marketminds-3d569.firebaseapp.com/Services/Seo/Link-building.html</loc>
+  </sitemap>
+  <sitemap>
+    <loc>https://marketminds-3d569.firebaseapp.com/Services/Seo/on-page-optimization.html</loc>
+  </sitemap>
+  <sitemap>
+    <loc>https://marketminds-3d569.firebaseapp.com/Services/Seo/local-seo.html</loc>
+  </sitemap>
+  <sitemap>
+    <loc>https://marketminds-3d569.firebaseapp.com/Services/Seo/technical-audits.html</loc>
+  </sitemap>
+  <sitemap>
+    <loc>https://marketminds-3d569.firebaseapp.com/Services/Content-marketing/blog-writing.html</loc>
+  </sitemap>
+  <sitemap>
+    <loc>https://marketminds-3d569.firebaseapp.com/Services/Content-marketing/ebooks-whitepapers.html</loc>
+  </sitemap>
+  <sitemap>
+    <loc>https://marketminds-3d569.firebaseapp.com/Services/Content-marketing/infographics.html</loc>
+  </sitemap>
+  <sitemap>
+    <loc>https://marketminds-3d569.firebaseapp.com/Services/Content-marketing/video-content.html</loc>
+  </sitemap>
+  <sitemap>
+    <loc>https://marketminds-3d569.firebaseapp.com/Services/Social-media/advertising.html</loc>
+  </sitemap>
+  <sitemap>
+    <loc>https://marketminds-3d569.firebaseapp.com/Services/Social-media/content-and-scheduling.html</loc>
+  </sitemap>
+  <sitemap>
+    <loc>https://marketminds-3d569.firebaseapp.com/Services/Social-media/strategy.html</loc>
+  </sitemap>
+  <sitemap>
+    <loc>https://marketminds-3d569.firebaseapp.com/Services/CRO/</loc>
+  </sitemap>
+  <sitemap>
+    <loc>https://marketminds-3d569.firebaseapp.com/Services/PPC/</loc>
+  </sitemap>
+
+  <!-- Pricing Section -->
+  <sitemap>
+    <loc>https://marketminds-3d569.firebaseapp.com/Pricing/seo.html</loc>
+  </sitemap>
+  <sitemap>
+    <loc>https://marketminds-3d569.firebaseapp.com/Pricing/email.html</loc>
+  </sitemap>
+  <sitemap>
+    <loc>https://marketminds-3d569.firebaseapp.com/Pricing/content-marketing.html</loc>
+  </sitemap>
+  <sitemap>
+    <loc>https://marketminds-3d569.firebaseapp.com/Pricing/ppc.html</loc>
+  </sitemap>
+  <sitemap>
+    <loc>https://marketminds-3d569.firebaseapp.com/Pricing/cro.html</loc>
+  </sitemap>
+  <sitemap>
+    <loc>https://marketminds-3d569.firebaseapp.com/Pricing/social-media.html</loc>
+  </sitemap>
+  <sitemap>
+    <loc>https://marketminds-3d569.firebaseapp.com/Pricing/business-planning.html</loc>
+  </sitemap>
+  <sitemap>
+    <loc>https://marketminds-3d569.firebaseapp.com/pricing/monthly</loc>
+  </sitemap>
+
+  <!-- Resources Section -->
+  <sitemap>
+    <loc>https://marketminds-3d569.firebaseapp.com/blog</loc>
+  </sitemap>
+  <sitemap>
+    <loc>https://marketminds-3d569.firebaseapp.com/case-studies</loc>
+  </sitemap>
+  <sitemap>
+    <loc>https://marketminds-3d569.firebaseapp.com/articles</loc> <!-- Corrected assuming it's a typo -->
+  </sitemap>
+
+  <!-- Company Section -->
+  <sitemap>
+    <loc>https://marketminds-3d569.firebaseapp.com/company/about.html</loc>
+  </sitemap>
+  <sitemap>
+    <loc>https://marketminds-3d569.firebaseapp.com/company/contact.html</loc>
+  </sitemap>
+</sitemapindex>

@@ -1,8 +1,13 @@
-function injectNav() {
-  // Path to nav.html
-  const navPath = '/components/nav/nav.html';
+// header-inject.js
 
-  // Fetching nav.html
+// Import functions from nav.js
+import { initializeAfterNavInjection } from '../components/Nav/nav.js';
+
+// Function to inject navigation HTML and CSS
+export function injectNav() {
+  const navPath = './components/Nav/nav.html';
+
+  // Fetch and inject the navigation HTML
   fetch(navPath)
     .then(response => {
       if (!response.ok) {
@@ -11,15 +16,11 @@ function injectNav() {
       return response.text();
     })
     .then(navContent => {
-      // Getting the div with .nav-insert class
       const insertNav = document.querySelector('.nav-insert');
       if (insertNav) {
-        
-        // Injecting the nav into the div
         insertNav.innerHTML = navContent;
-        
-        // the toggle func and icons are in /components/nav/nav.js
-        initializeNavToggle();
+        initializeAfterNavInjection();
+        injectNavCss();
       }
     })
     .catch(error => {
@@ -27,5 +28,15 @@ function injectNav() {
     });
 }
 
-// Injecting Nav component after the DOM loads
+// Function to inject CSS into the head
+function injectNavCss() {
+  const link = document.createElement('link');
+  link.rel = 'stylesheet';
+  link.href = './components/Nav/nav.css';
+  link.onload = () => console.log('Nav CSS loaded successfully.');
+  link.onerror = () => console.error('Failed to load Nav CSS.');
+  document.head.appendChild(link);
+}
+
+// Ensure the function is executed after the DOM is fully loaded
 document.addEventListener('DOMContentLoaded', injectNav);

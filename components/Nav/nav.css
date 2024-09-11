@@ -1,4 +1,4 @@
-@import url('/css/css-helper.css');
+
 
 .nav-section {
   display: block;
@@ -7,9 +7,10 @@
   background-color: var(--nav-bg-color);
 }
 
+
 .nav-container {
-  max-width: 1000px;
-  margin: 0 auto;
+  max-width: 1200px;
+  margin: 0 auto !important;
   padding: 15px 20px;
   color: var(--nav-text-color);
 }
@@ -22,18 +23,23 @@
 }
 
 .logo-col {
-  flex: 1;
+  flex: 0 1 auto;
   display: flex;
   align-items: center;
+  margin-right: auto;
 }
 
 .menu-col {
-  flex: 2;
+  flex-grow: 1;
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
   align-items: center;
-  margin: 0 auto;
+  margin-left: auto;
+  gap: 20px;
 }
+
+
+
 
 .icon-col {
   flex: 1;
@@ -46,7 +52,7 @@
   display: flex;
   justify-content: space-between;
   list-style: none;
-  gap: 20px;
+  gap: 15px;
   position: relative;
 }
 
@@ -69,6 +75,18 @@
 .nav-logo-text {
   font-size: 24px;
   color: var(--nav-text-color);
+
+}
+
+.nav-logo-text a{
+  color: var(--nav-text-color);
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.nav-logo-text a:hover{
+  color: var(--nav-text-color);
+  text-decoration: none;
 }
 
 .mega-menu {
@@ -143,6 +161,7 @@
   cursor: pointer;
   z-index: 20;
 }
+
 
 .menu-col.active {
   display: flex;

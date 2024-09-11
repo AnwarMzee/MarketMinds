@@ -1,0 +1,50 @@
+/* this file will handle styles for all forms */
+
+.newsletter-signup {
+  text-align: center;
+  background-color: #ffffff;
+  padding: 60px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.newsletter-signup h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: var(--primarycta); /* Use primary CTA color */
+}
+
+.newsletter-signup p {
+  font-size: 14px;
+  color: var(--text-color);
+  margin-bottom: 15px;
+}
+
+.signup-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.signup-form input {
+  padding: 10px;
+  border: 1px solid var(--secondarycta); /* Use secondary CTA color for border */
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+.subscribe-btn {
+  padding: 10px;
+  background-color: var(--primarycta);
+  color: var(--primarycta-text-color);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.subscribe-btn:hover {
+  background-color: var(--primarycta-hover);
+}

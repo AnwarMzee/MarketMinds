@@ -1,104 +1,127 @@
-
 /* Import Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&family=Open+Sans:wght@300;400;500;600;700&display=swap');
 
-
-@import url('/css/css-helper.css');
-
-
-/* css styles for colors*/
+/* Main Colors */
 :root {
   --primary-color: #28A745;
   --secondary-color: #20C997;
   --background-color: #F8F9FA;
   --text-color: #2D2D2D;
-  --highlight-color: #FFC107;
 
-  /* CTA Colors */
+  /* Highlight Colors */
+  --highlight-color: #FFC107;
+  --highlight-hover-color: #e6ac00;
+
+  /* Call-to-Action (CTA) Colors */
   --primarycta: #FF4C4C;
   --primarycta-hover: #CC3333;
-  --primarycta-text-color:#FFFFFF;
+  --primarycta-text-color: #FFFFFF;
 
+  /* Secondary CTA Colors */
   --secondarycta: #20C997;
   --secondarycta-hover: #17A589;
   --secondarycta-text-color: #FFFFFF;
 
-  --read-more-color: #FFC107;
-  --read-morecolor-hover:#E0A800;
-  --read-more-text-color:#2D2D2D;
-
-
-  /* css for link colors*/
+  /* Link Colors */
   --link-color: #218838;
   --link-color-hover: #20C997;
   --link-color-active: #174EA6;
+  --link-cta:#FF4C4C;
+  --link-cta-hover:#CC3333;
 
-  /*css colors on Nav & footer*/
+  /* Navigation & Footer Colors */
   --nav-bg-color: #1F4D3F;
   --nav-text-color: #FFFFFF;
   --nav-link-color: #F8F9FA;
   --nav-link-hover-color: #20C997;
   --mega-nav-link-color: #20C997;
-  --mega-nav-link-color-hover: #ffff;
-
-  
+  --mega-nav-link-color-hover: #ffffff;
   --footer-bg-color: #1B2B30;
   --footer-text-color: #F8F9FA;
 
-  /* hero sections colors*/
-   --hero-bg-color: #E8F5E9;
-   --hero-text-color: #2D2D2D;
-   --hero-cta-color: #FF4C4C;
-   --hero-cta-hover-color: #CC3333;
+  /* Hero Section Colors */
+  --hero-bg-color: #E8F5E9;
+  --hero-text-color: #2D2D2D;
+  --hero-cta-color: #FF4C4C;
+  --hero-cta-hover-color: #CC3333;
+
+  /* Background Colors for Sections */
+  --background-light: #f7f6f2;
+  --background-grey: #f0f0f0;
+  --background-olive: #eaf0e0;
+  --background-sand: #f5e9dc;
+  --background-blue: #e1f1f6;
+
+  /* Read More Button Colors */
+  --read-more-color: #FFC107;
+  --read-morecolor-hover: #E0A800;
+  --read-more-text-color: #2D2D2D;
+
+
+/* for arccive and blog*/
+  --archive-title-color: #333333;
+  --archive-excerpt-color: #555555;
+  --archive-btn-color: #28A745;
+  --archive-btn-text-color: #ffffff;
+  --archive-title-font-size: 20px;
+  --archive-excerpt-font-size: 14px !important;
+  --archive-btn-font-size: 14px;
+  --archive-title-font-weight: 600;
+  --archive-excerpt-font-weight: 400;
 }
 
 /* Base Font Setup */
 body {
-    font-family: 'Open Sans', sans-serif;
-    font-size: 16px;
-    line-height: 1.6;
-    color: var(--text-color);
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  color: var(--text-color);
 }
 
+button {
+  font-size: 16px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  text-transform: capitalize;
+}
 
-
-/* css for all Headings */
+/* Headings */
 h1, h2, h3, h4, h5, h6 {
-    font-family: 'Montserrat', sans-serif;
-    line-height: 1.2;
-    color: var(--text-color);
-    text-transform: capitalize;
-    margin-bottom: 18px;
+  font-family: 'Montserrat', sans-serif;
+  line-height: 1.2;
+  color: var(--text-color);
+  text-transform: capitalize;
+  margin-bottom: 18px;
 }
 
 h1 {
-    font-size: 40px;
-    font-weight: 700;
+  font-size: 40px;
+  font-weight: 700;
 }
 
 h2 {
-    font-size: 34px;
-    font-weight: 700;
+  font-size: 34px;
+  font-weight: 700;
 }
 
 h3 {
-    font-size: 28px;
-    font-weight: 600;
+  font-size: 28px;
+  font-weight: 600;
 }
 
 h4 {
-    font-size: 24px;
-    font-weight: 600;
+  font-size: 24px;
+  font-weight: 600;
 }
 
 h5 {
-    font-size: 20px;
-    font-weight: 500;
+  font-size: 20px;
+  font-weight: 500;
 }
 
 h6 {
-    font-size: 18px;
-    font-weight: 500;
+  font-size: 18px;
+  font-weight: 500;
 }
 
 /* Paragraphs */

@@ -1,36 +1,46 @@
-// Function to initialize toggle functionality after the nav is injected
+// nav.js
 
+// Function to initialize the toggle functionality
+export function initializeNavToggle() {
+  const openIcon = document.getElementById('menu-open-icon');
+  const closeIcon = document.getElementById('menu-close-icon');
+  const menuCol = document.querySelector('.menu-col');
 
-function initializeNavToggle() {
+  if (!openIcon || !closeIcon || !menuCol) {
+    console.error('Navigation toggle elements are missing');
+    return;
+  }
 
-  // i am adding a short delay to ensure the elements are available after injection
-  setTimeout(() => {
-    const openIcon = document.getElementById('menu-open-icon');
-    const closeIcon = document.getElementById('menu-close-icon');
-    const menuCol = document.querySelector('.menu-col');
+  const updateIconVisibility = () => {
+    const isDesktop = window.innerWidth > 768;
+    openIcon.style.display = isDesktop ? 'none' : 'block';
+    closeIcon.style.display = 'none';
+    menuCol.classList.remove('active');
+  };
 
-    // Check if elements exist before adding event listeners
+  openIcon.addEventListener('click', () => {
+    menuCol.classList.add('active');
+    openIcon.style.display = 'none';
+    closeIcon.style.display = 'block';
+  });
 
-    if (openIcon && closeIcon && menuCol) {
+  closeIcon.addEventListener('click', () => {
+    menuCol.classList.remove('active');
+    openIcon.style.display = 'block';
+    closeIcon.style.display = 'none';
+  });
 
-      // Click event to open the mobile menu
-      openIcon.addEventListener('click', function () {
-        menuCol.classList.add('active');
-        openIcon.style.display = 'none';
-        closeIcon.style.display = 'block';
-      });
+  window.addEventListener('resize', updateIconVisibility);
 
-      // Click event to close the mobile menu
-      closeIcon.addEventListener('click', function () {
-        menuCol.classList.remove('active');
-        openIcon.style.display = 'block';
-        closeIcon.style.display = 'none';
-      });
-    } else {
-      console.error('Navigation toggle elements are missing');
+  updateIconVisibility();
+}
+
+// Function to initialize the toggle after the nav is injected
+export function initializeAfterNavInjection() {
+  const checkNavLoaded = setInterval(() => {
+    if (document.getElementById('menu-open-icon') && document.querySelector('.menu-col')) {
+      clearInterval(checkNavLoaded);
+      initializeNavToggle();
     }
   }, 100);
 }
-
-// Reattach event listeners after nav injection
-document.addEventListener('DOMContentLoaded', initializeNavToggle);

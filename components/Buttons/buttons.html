@@ -4,12 +4,17 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
-  <link rel="stylesheet" href="/css/global-styles.css">
+  <link rel="stylesheet" href="./css/global-styles.css">
+  <link rel="stylesheet" href="/css/typography.css">
 </head>
 <body>
   <button class="primary-btn">Primary Button</button>
 <button class="secondary-btn">Secondary Button</button>
 <button class="highlight-btn">Highlight Button</button>
+
+<p> <a href="/case-studies" class="cta-link">cta link.</a></p>
+
+<div class="alert-highlight"><button class="alert-highlight">.alert-highlight</button></div>
 
 
 <style>
@@ -50,12 +55,11 @@
   color: #FFFFFF; /* Change text color to white */
 }
 
-/* Highlight Button - Special CTA using highlight color */
+/* Highlight Button Styling */
 .highlight-btn {
-  background-color: var(--read-more-color); /* Using highlight color */
-  color: var(--read-more-text-color); /* Dark text */
+  background-color: var(--highlight-color);
+  color: #ffffff; /* Ensure text color contrasts well */
   padding: 10px 20px;
-  margin: 10px;
   border: none;
   border-radius: 5px;
   font-weight: 600;
@@ -65,8 +69,16 @@
 }
 
 .highlight-btn:hover {
-  background-color: #FFCA28;
-  transform: scale(1.05);
+  background-color: var(--highlight-hover-color);
+  transform: scale(1.05); /* Slightly enlarges on hover */
+}
+
+/* Example use in other elements */
+.alert-highlight {
+  border-left: 4px solid var(--highlight-color);
+  padding: 10px;
+  background-color: #fff8e1;
+  color: #333; /* Text color for readability */
 }
 
 </style>

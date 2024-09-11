@@ -1,0 +1,54 @@
+/* this file will handle css for archive pages and blog page*/
+
+/* Articles Section with Gradient Background */
+.articles-section {
+  padding: 60px 24px;
+  background: linear-gradient(135deg, var(--background-light), var(--background-olive));
+  border-radius: 8px;
+  color: var(--text-color);
+}
+
+.check-guides {
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  max-width: 400px;
+}
+
+/* Individual Article Content Styling */
+.articles-contents {
+  background: #fff;
+  padding: 20px;
+  height: 100%;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: left;
+}
+
+/* Featured Image Styling */
+.featured-image {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+/* Archive Title Styling */
+.archive-title {
+  font-size: var(--archive-title-font-size);
+  font-weight: var(--archive-title-font-weight);
+  color: var(--archive-title-color);
+  margin-bottom: 8px;
+  line-height: 1.4;
+}
+
+/* Archive Excerpt Styling */
+.excerpt {
+  font-weight: var(--archive-excerpt-font-weight);
+  color: var(--archive-excerpt-color);
+  margin-bottom: 16px;
+  line-height: 1.6;
+}

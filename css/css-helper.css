@@ -1,11 +1,13 @@
+/* Import internal CSS dependencies in order */
+@import url('./layout.css');
+@import url('./responsive.css');
+@import url('./typography.css');
 /* css-helper.css */
 
 /* Import external and third-party resources */
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&family=Open+Sans:wght@300;400;500;600;700&display=swap');
 
-/* Import internal CSS dependencies in order */
-@import url('/css/typography.css');
-@import url('/css/layout.css');
-@import url('/components/Footer/footer.css');
-@import url('/css/responsive.css'); 
+
+
+

@@ -6,8 +6,12 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <link rel="stylesheet" href="/components/Nav/nav.css">
     <link rel="stylesheet" href="/css/global-styles.css">
-    <script src="/components/nav/nav.js" defer></script>
+    <link rel="stylesheet" href="/css/layout.css">
+    <link rel="stylesheet" href="/css/responsive.css">
+    <link rel="stylesheet" href="/css/typography.css">
     <title>Nav menu Component</title>
+
+    
 </head>
 <body>
 
@@ -19,7 +23,7 @@
 
                 <!-- Column 1: Logo -->
                 <div class="nav-col logo-col">
-                    <span class="nav-logo-text">MarketMinds</span>
+                    <span class="nav-logo-text"><a href="/">MarketMinds</a></span>
                 </div>
 
                 <!-- Column 2: Main Menu -->
@@ -35,35 +39,35 @@
                                     <div class="mega-menu-col">
                                         <h4>SEO</h4>
                                         <ul>
-                                            <li><a href="/Services/Seo/keyword-research.html">Keyword Research</a></li>
-                                            <li><a href="/Services/Seo/Link-building.html">Link Building</a></li>
-                                            <li><a href="/Services/Seo/on-page-optimization.html">On-Page SEO</a></li>
-                                            <li><a href="/Services/Seo/local-seo.html">Local SEO</a></li>
-                                            <li><a href="/Services/Seo/technical-audits.html">Technical SEO</a></li>
+                                            <li><a href="./Services/Seo/keyword-research.html">Keyword Research</a></li>
+                                            <li><a href="./Services/Seo/Link-building.html">Link Building</a></li>
+                                            <li><a href="./Services/Seo/on-page-optimization.html">On-Page SEO</a></li>
+                                            <li><a href="./Services/Seo/local-seo.html">Local SEO</a></li>
+                                            <li><a href="./Services/Seo/technical-audits.html">Technical SEO</a></li>
                                         </ul>
                                     </div>
                                     <div class="mega-menu-col">
                                         <h4>Content Marketing</h4>
                                         <ul>
-                                            <li><a href="/Services/Content-marketing/blog-writing.html">Blog Writing</a></li>
-                                            <li><a href="/Services/Content-marketing/ebooks-whitepapers.html">Ebooks & White Papers</a></li>
-                                            <li><a href="/Services/Content-marketing/infographics.html">Infographics</a></li>
-                                            <li><a href="/Services/Content-marketing/video-content.html">Video Content</a></li>
+                                            <li><a href="./Services/Content-marketing/blog-writing.html">Blog Writing</a></li>
+                                            <li><a href="./Services/Content-marketing/ebooks-whitepapers.html">Ebooks & White Papers</a></li>
+                                            <li><a href="./Services/Content-marketing/infographics.html">Infographics</a></li>
+                                            <li><a href="./Services/Content-marketing/video-content.html">Video Content</a></li>
                                         </ul>
                                     </div>
                                     <div class="mega-menu-col">
                                         <h4>Social Media Management</h4>
                                         <ul>
-                                            <li><a href="#">Social Media Ads</a></li>
-                                            <li><a href="#">Content Scheduling</a></li>
-                                            <li><a href="#">Social Strategy</a></li>
+                                            <li><a href="../Services/Social-media/advertising.html">Social Media Ads</a></li>
+                                            <li><a href="../Services/Social-media/content-and-scheduling.html">Content Scheduling</a></li>
+                                            <li><a href="../Services/Social-media/strategy.html">Social Strategy</a></li>
                                         </ul>
                                     </div>
                                     <div class="mega-menu-col">
                                         <h4><i class="fas fa-tags"> Special Offer!</i></h4>
                                         <ul>
-                                            <li><a href="/Services/CRO/">CRO Services</a></li>
-                                            <li><a href="/Services/PPC/">PPC Services</a></li>
+                                            <li><a href="./Services/CRO/">CRO Services</a></li>
+                                            <li><a href="./Services/PPC/">PPC Services</a></li>
                                         </ul>
                                     </div>
                                 </div>
@@ -77,23 +81,23 @@
                                 <div class="mega-menu-row">
                                     <div class="mega-menu-col">
                                         <ul>
-                                            <li><a href="/Pricing/seo.html">SEO Pricing</a></li>
-                                            <li><a href="/Pricing/email.html">Email Marketing Pricing</a></li>
-                                            <li><a href="/Pricing/content-marketing.html">Content Marketing Pricing</a></li>
-                                            <li><a href="/Pricing/ppc.html">PPC Pricing</a></li>
+                                            <li><a href="./Pricing/seo.html">SEO Pricing</a></li>
+                                            <li><a href="./Pricing/email.html">Email Marketing Pricing</a></li>
+                                            <li><a href="./Pricing/content-marketing.html">Content Marketing Pricing</a></li>
+                                            <li><a href="./Pricing/ppc.html">PPC Pricing</a></li>
                                         </ul>
                                     </div>
                                     <div class="mega-menu-col">
                                         <ul>
-                                            <li><a href="/Pricing/cro.html">CRO Pricing</a></li>
-                                            <li><a href="/Pricing/social-media.html">Social Media Pricing</a></li>
-                                            <li><a href="/Pricing/business-planning.html">Strategy & Business Planning</a></li>
+                                            <li><a href="./Pricing/cro.html">CRO Pricing</a></li>
+                                            <li><a href="./Pricing/social-media.html">Social Media Pricing</a></li>
+                                            <li><a href="./Pricing/business-planning.html">Strategy & Business Planning</a></li>
                                         </ul>
                                     </div>
                                     <div class="mega-menu-col">
                                         <div class="cta-container" >
                                             <button class="primary-btn">
-                                                Request Monthly Package
+                                                <a href="./pricing/monthly">Monthly Packages</a>
                                             </button>
                                             <p class="discount-text">
                                                 *Custom discounts available on request.
@@ -108,15 +112,20 @@
                         <!-- Drop menu -->
                         <div class="dropDown-container">
                             <ul class="dropdown-menu">
-                                <li><a href="/blog">Blog</a></li>
-                                <li><a href="/case-studies">Case Studies</a></li>
-                                <li><a href="/artciles">Articles</a></li>
+                                <li><a href="./blog">Blog</a></li>
+                                <li><a href="./case-studies">Case Studies</a></li>
+                                <li><a href="./artciles">Articles</a></li>
                             </ul>
                         </div>
                         </li>
-                        <li><a href="/company/about.html">About</a></li>
-                        <li><a href="/company/contact.html">Contact</a></li>
+                        <li><a href="./company/about.html">About</a></li>
+                    
+                        
                     </ul>
+                    <div class="nav-btn-container">
+                        <button class="primary-btn"><a href="./company/contact.html">Contact</a></button>
+
+                    </div>
                 </div>
 
                 <!-- Column 3: Icons -->
@@ -130,5 +139,10 @@
     </nav>
 </header>
 
+
+
+<script src="/js/app.js" defer></script>
+
+<script src="/components/Nav/nav.js" defer></script>
 </body>
 </html>

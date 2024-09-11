@@ -1,8 +1,8 @@
-function injectFooter() {
-  // Path to footer.html file
-  const footerPath = '/components/footer/footer.html';
+// footer-inject.js
 
-  // Fetching footer.html content
+export function injectFooter() {
+  const footerPath = '../components/Footer/footer.html';
+
   fetch(footerPath)
     .then(response => {
       if (!response.ok) {
@@ -11,19 +11,15 @@ function injectFooter() {
       return response.text();
     })
     .then(getFooterComponent => {
-
-      // got the div with class of .footer-insert
       const footerInsert = document.querySelector('.footer-insert');
-      
       if (footerInsert) {
         footerInsert.innerHTML = getFooterComponent;
       }
     })
     .catch(error => {
-      // Fixed syntax error in console logging
       console.error('Error loading footer:', error);
     });
 }
 
-// Load function after the DOM loads
+// Ensure the function is executed after DOM is fully loaded
 document.addEventListener('DOMContentLoaded', injectFooter);

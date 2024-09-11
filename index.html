@@ -3,27 +3,638 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <link rel="stylesheet" href="components/Nav/nav.css">
-    <link rel="stylesheet" href="css/global-styles.css">
-    <script src="components/nav/nav.js" defer></script>
-    <script src="js/app.js" defer></script>
+  <link rel="stylesheet" href="./css/global-styles.css">
+  <title>Home</title>
 </head>
+
+
 <body>
   <!-- Header Insertion Point -->
   <div class="nav-insert"></div>
 
+
+
+  <!----------Home page hero section-->
+  <section class="hero-container">
+    <div class="inner-container">
+      <div class="hero-area">
+        <!-- left Column: Content -->
+        <div class="hero-contents">
+          <h1>Unlock Your Brand’s Potential with Expert <span class="power-word">Marketing Solutions</span></h1>
+          <p>Market Mind empowers your brand with tailored marketing strategies that drive growth. <br>From SEO to social media, our expert team helps you achieve your business goals.</p>
+
+
+          <!----------a div with two call to actions buttons-->
+          <div class="two-btn">
+            <!-- Primary Button for Services -->
+            <button class="primarybtn"><a href="./Services">Services</a></button>
+          
+            <!-- secondary CTA Button for Pricing-->
+            <button class="secondary-btn">
+             <a href="./Pricing"> Pricing <i class="fas fa-arrow-right"></i></a>
+            </button>
+          </div>
+          
+        </div>
+
+        <!-- Left Column: Image -->
+        <div class="hero-img">
+          <img src="./Assets/images/1.svg" alt="Hero Image">
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
   <!-- Main Content -->
   <main>
-      <h1>Welcome to Our Website</h1>
-      <p>Main content goes here...</p>
-  </main>
+<!-- As Seen On Section -->
+<section class="as-seen-in">
+  <h3 style="text-align: center;">As seen in</h3>
+  <div class="inner-container">
+    <div class="company-logos-row">
+      <div class="company-logos-col">
+        <img src="/Assets/images/active campain logo.svg" alt="as seen in logos" class="seen-on-logos">
+        <img src="/Assets/images/ahrefs logo.svg" alt="as seen in logos" class="seen-on-logos">
+        <img src="/Assets/images/business insider.svg" alt="as seen in logos" class="seen-on-logos">
+        <img src="/Assets/images/drift logo.svg" alt="as seen in logos" class="seen-on-logos">
+        <img src="/Assets/images/hubspot logo.svg" alt="as seen in logos" class="seen-on-logos">
+        <img src="/Assets/images/market watch logo.svg" alt="as seen in logos" class="seen-on-logos">
+        <img src="/Assets/images/neil logo.svg" alt="as seen in logos" class="seen-on-logos">
+        <img src="/Assets/images/newyork times logo.svg" alt="as seen in logos" class="seen-on-logos">
+        <img src="/Assets/images/semrum logo.svg" alt="as seen in logos" class="seen-on-logos">
+        <img src="/Assets/images/tech chrunch logo.svg" alt="as seen in logos" class="seen-on-logos">
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!---------Why trust us section-->
+<section class="why-trust-us">
+  <div class="inner-container">
+    <div class="why-trust-us-container">
+      <div class="centred-text">
+        <h2>Why trust us</h2>
+      <p>At Marketing Minds, we don't just offer marketing services; we deliver results. Our dedicated team of experts combines cutting-edge strategies with a client-first approach to help your business thrive in a competitive landscape."</p>
+      </div>
+      <div class="three-col-grid">
+        <div class="three-col-grid-contents">
+          
+          <h3>Proven Results</h3>
+          <p>Our data-driven strategies have consistently delivered exceptional ROI for our clients, helping them achieve their marketing goals.</p>
+        </div>
+      
+        <div class="three-col-grid-contents">
+          <h3>Experienced Team</h3>
+          <p>Our team comprises seasoned marketing professionals with expertise across all major industries, ensuring you're in capable hands.</p>
+        </div>
+      
+        <div class="three-col-grid-contents">
+          <h3>Customized Solutions</h3>
+          <p>We tailor our marketing strategies to meet your specific business needs, ensuring you get the best results.</p>
+        </div>
+      
+        <div class="three-col-grid-contents">
+          <h3>Transparent Reporting</h3>
+          <p>Stay in control with our clear, comprehensive reports that keep you updated on every aspect of your campaigns.</p>
+        </div>
+      
+        <div class="three-col-grid-contents">
+          <h3>Cutting-Edge Tools</h3>
+          <p>We use the latest marketing technologies to analyze data, optimize campaigns, and maximize your marketing investment.</p>
+        </div>
+      
+        <div class="three-col-grid-contents">
+          <h3>24/7 Support</h3>
+          <p>Our dedicated support team is available around the clock to assist you with any queries or challenges you face.</p>
+        </div>
+      </div>
+  
+    </div>
+  </div>
+</section>
+
+
+<!------------Service Tabs Section-->
+<section class="tabs-section">
+  <div class="inner-container">
+    <!-- Section Heading and Intro Paragraph -->
+    <div class="centred-text">
+      <h2>Explore Our Services</h2>
+      <p>Discover how our expert marketing solutions can help your business grow and thrive in the competitive landscape.</p>
+    </div>
+
+    <!-- Tabs Navigation with Full-Width Headings -->
+    <div class="tabs-nav">
+      <ul class="tabs">
+        <li class="tab active" data-tab="content-marketing">Content Marketing</li>
+        <li class="tab" data-tab="cro">CRO</li>
+        <li class="tab" data-tab="email-marketing">Email Marketing</li>
+        <li class="tab" data-tab="ppc">PPC</li>
+        <li class="tab" data-tab="seo">SEO</li>
+        <li class="tab" data-tab="social-media">Social Media</li>
+        <li class="tab" data-tab="business-strategy">Business Strategy</li>
+      </ul>
+    </div>
+
+    <!-- Tabs Content Area -->
+    <div class="tabs-content">
+      <!-- Content Marketing Tab Content -->
+      <div class="tab-content active" id="content-marketing">
+        <div class="tabs-content-col">
+          <h3>Content Marketing</h3>
+          <p>Create compelling content that attracts, engages, and converts your audience. Drive brand awareness and foster customer loyalty.</p>
+          <div class="checked-lists">
+            <ul>
+              <li>Strategic content planning</li>
+              <li>SEO-optimized blog writing</li>
+              <li>Engaging visuals and videos</li>
+              <li>Content distribution and promotion</li>
+            </ul>
+          </div>
+          <button class="primary-btn"><a href="./Services/Content-marketing/">Learn More</a></button>
+        </div>
+        <div class="tabs-img-col">
+          <img src="./Assets/images/content marketing vial graphic.svg" alt="Content Marketing">
+        </div>
+      </div>
+
+      <!-- CRO Tab Content -->
+      <div class="tab-content" id="cro">
+        <div class="tabs-content-col">
+          <h3>Conversion Rate Optimization (CRO)</h3>
+          <p>Boost your sales and leads by optimizing your website’s performance. Turn more visitors into loyal customers with proven techniques.</p>
+          <div class="checked-lists">
+            <ul>
+              <li>A/B testing for best results</li>
+              <li>Landing page enhancements</li>
+              <li>Sales funnel optimization</li>
+              <li>User behavior analysis</li>
+            </ul>
+          </div>
+          <button class="primary-btn"><a href="./Services/CRO/">Learn More</a></button>
+        </div>
+        <div class="tabs-img-col">
+          <img src="./Assets/images/Conversion Rate Optimization graphic 1.svg" alt="Conversion Rate Optimization">
+        </div>
+      </div>
+
+      <!-- Email Marketing Tab Content -->
+      <div class="tab-content" id="email-marketing">
+        <div class="tabs-content-col">
+          <h3>Email Marketing</h3>
+          <p>Engage your audience with personalized email campaigns that drive action. Nurture leads, increase sales, and build customer loyalty.</p>
+          <div class="checked-lists">
+            <ul>
+              <li>Automated email workflows</li>
+              <li>Targeted segmentation strategies</li>
+              <li>Creative and engaging email designs</li>
+              <li>Performance tracking and optimization</li>
+            </ul>
+          </div>
+          <button class="primary-btn"><a href="./Services/Email-marketing/">Learn More</a></button>
+        </div>
+        <div class="tabs-img-col">
+          <img src="./Assets/images/Email Marketing graphic 1.svg" alt="Email Marketing">
+        </div>
+      </div>
+
+      <!-- PPC Tab Content -->
+      <div class="tab-content" id="ppc">
+        <div class="tabs-content-col">
+          <h3>Pay-Per-Click Advertising (PPC)</h3>
+          <p>Drive instant traffic and boost conversions with targeted PPC campaigns. Get your brand in front of the right audience at the right time.</p>
+          <div class="checked-lists">
+            <ul>
+              <li>Google Ads and Bing Ads management</li>
+              <li>Social media advertising strategies</li>
+              <li>Bid optimization for maximum ROI</li>
+              <li>Detailed performance analytics</li>
+            </ul>
+          </div>
+          <button class="primary-btn"><a href="./Services/PPC/">Learn More</a></button>
+        </div>
+        <div class="tabs-img-col">
+          <img src="./Assets/images/Pay-Per-Click Advertising graphic 1.svg" alt="PPC Advertising">
+        </div>
+      </div>
+
+      <!-- SEO Tab Content -->
+      <div class="tab-content" id="seo">
+        <div class="tabs-content-col">
+          <h3>Search Engine Optimization (SEO)</h3>
+          <p>Improve your visibility on search engines and attract more organic traffic. Get your website ranked higher with proven SEO strategies.</p>
+          <div class="checked-lists">
+            <ul>
+              <li>Comprehensive keyword research</li>
+              <li>On-page and technical SEO</li>
+              <li>High-quality link building</li>
+              <li>Performance monitoring and reporting</li>
+            </ul>
+          </div>
+          <button class="primary-btn"><a href="./Services/Seo/">Learn More</a></button>
+        </div>
+        <div class="tabs-img-col">
+          <img src="./Assets/images/seo graphic 1.svg" alt="SEO">
+        </div>
+      </div>
+
+      <!-- Social Media Marketing Tab Content -->
+      <div class="tab-content" id="social-media">
+        <div class="tabs-content-col">
+          <h3>Social Media Marketing</h3>
+          <p>Connect with your audience and grow your brand on social media. Create impactful campaigns that resonate and drive engagement.</p>
+          <div class="checked-lists">
+            <ul>
+              <li>Content creation and scheduling</li>
+              <li>Influencer partnerships</li>
+              <li>Community management</li>
+              <li>Social media advertising</li>
+            </ul>
+          </div>
+          <button class="primary-btn"><a href="./Services/Social-media/">Learn More</a></button>
+        </div>
+        <div class="tabs-img-col">
+          <img src="./Assets/images/Social Media Marketing graphic 1.svg" alt="Social Media Marketing">
+        </div>
+      </div>
+
+      <!-- Business Strategy Tab Content -->
+      <div class="tab-content" id="business-strategy">
+        <div class="tabs-content-col">
+          <h3>Business Strategy & Development</h3>
+          <p>Elevate your business with strategic planning and development. Align your marketing efforts with your business goals for sustained growth.</p>
+          <div class="checked-lists">
+            <ul>
+              <li>Market analysis and research</li>
+              <li>Strategic planning and execution</li>
+              <li>Brand positioning strategies</li>
+              <li>Sales and revenue growth tactics</li>
+            </ul>
+          </div>
+          <button class="primary-btn"><a href="./Services/strategy-and-Development/">Learn More</a></button>
+        </div>
+        <div class="tabs-img-col">
+          <img src="./Assets/images/Business Strategy & Development graphics 1.svg" alt="Business Strategy and Development">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!------------How it works section-->
+<section class="how-it-works">
+  <div class="inner-container">
+    <!-- Intro and Headline -->
+    <div class="centred-text">
+      <h2>How We <span class="power-word">Help You Succeed </span></h2>
+      <p>Our proven process is designed with your success in mind. From understanding your unique needs to delivering exceptional results, we take you through a journey focused on driving growth and maximizing impact. Here’s how we make it happen:</p>
+    </div>
+
+    <!-- Two Column Grid Container -->
+    <div class="two-grid-container">
+      <div class="two-col-grid">
+        <!-- Step 1: Discovery Phase -->
+        <div class="righ-col-grid">
+          <h3>Step 1: Discovery Phase</h3>
+          <p>We begin with a comprehensive exploration of your business, diving into your goals, challenges, and market positioning. Through personalized consultations and in-depth research, we uncover key insights that set the foundation for a strategic approach. Our goal is to align our strategy with your vision, ensuring every decision drives your business forward. <a href="./company/book-call.html" class="cta-link">Book your free consultation now.</a></p>
+        </div>
+        <div class="left-col-grid">
+          <img src="/Assets/images/Discovery phase.svg" alt="Discovery Phase" class="pages-image">
+        </div>
+
+        <!-- Step 2: Strategy Development -->
+        <div class="righ-col-grid">
+          <img src="/Assets/images/Strategy Development.svg" alt="Strategy Development" class="pages-image">
+        </div>
+        <div class="left-col-grid">
+          <h3>Step 2: Strategy Development</h3>
+          <p>With our findings, we craft a tailored strategy designed to meet your specific needs. This phase combines data-driven analysis with creative problem-solving to develop a plan that is both innovative and effective. We set clear goals, timelines, and actionable steps to ensure your business stays on track and ahead of the competition. <a href="./company/portfolio.html" class="cta-link">Explore our portfolio of success stories.</a></p>
+        </div>
+
+        <!-- Step 3: Implementation -->
+        <div class="righ-col-grid">
+          <h3>Step 3: Implementation</h3>
+          <p>In the implementation phase, our experts bring your strategy to life, managing every detail with precision. From content creation to campaign execution, we take charge of all aspects to ensure smooth delivery and maximum impact. Our team keeps you updated with regular progress reports and open communication, so you’re always in the loop. <a href="./company/testimonials.html" class="cta-link">Read what our clients have to say.</a></p>
+        </div>
+        <div class="left-col-grid">
+          <img src="/Assets/images/Implementation.svg" alt="Implementation" class="pages-image">
+        </div>
+
+        <!-- Step 4: Results & Optimization -->
+        <div class="righ-col-grid">
+          <img src="/Assets/images/Results & Optimization.svg" alt="Results & Optimization" class="pages-image">
+        </div>
+        <div class="left-col-grid">
+          <h3>Step 4: Results & Optimization</h3>
+          <p>Our commitment doesn’t end with implementation. We continuously monitor performance, analyze data, and refine your strategy to ensure optimal results. Through ongoing optimization, we adapt to market changes, helping your business not just achieve but exceed its goals. Expect a partnership that evolves with your needs for sustained growth and success. <a href="./case-studies" class="cta-link">See detailed case studies of our optimized results.</a></p>
+        </div>
+
+        
+      </div>
+      <!-----two btn for call to action-->
+      <div class="two-btn">
+        <!-- Primary Button for Services -->
+        <button class="primarybtn"><a href="./Services">Services</a></button>
+      
+        <!-- secondary CTA Button for Pricing-->
+        <button class="secondary-btn">
+         <a href="./Pricing"> Pricing <i class="fas fa-arrow-right"></i></a>
+        </button>
+      </div>
+    </div>
+    
+  </div>
+</section>
+
+
+<!-- Mobile Version of How It Works Section -->
+<section class="how-it-works-mobile" style="display: none;">
+  <div class="inner-container">
+    <!-- Intro and Headline -->
+    <div class="centred-text">
+      <h2>How We Help You Succeed</h2>
+      <p>Our proven process is designed with your success in mind. From understanding your unique needs to delivering exceptional results, we guide you through a journey focused on driving growth and maximizing impact. Here’s how we make it happen:</p>
+    </div>
+
+    <!-- Step 1: Discovery Phase -->
+    <div class="mobile-step">
+      <h3>Step 1: Discovery Phase</h3>
+      <img src="/Assets/images/Discovery phase.svg" alt="Discovery Phase" class="pages-image">
+      <p>We begin with a comprehensive exploration of your business, diving into your goals, challenges, and market positioning. Through personalized consultations and in-depth research, we uncover key insights that set the foundation for a strategic approach. <a href="./company/book-call.html" class="cta-link">Book your free consultation now.</a></p>
+    </div>
+
+    <!-- Step 2: Strategy Development -->
+    <div class="mobile-step">
+      <h3>Step 2: Strategy Development</h3>
+      <img src="/Assets/images/Strategy Development.svg" alt="Strategy Development" class="pages-image">
+      <p>With our findings, we craft a tailored strategy designed to meet your specific needs. This phase combines data-driven analysis with creative problem-solving to develop a plan that is both innovative and effective. <a href="./company/portfolio.html" class="cta-link">Explore our portfolio of success stories.</a></p>
+    </div>
+
+    <!-- Step 3: Implementation -->
+    <div class="mobile-step">
+      <h3>Step 3: Implementation</h3>
+      <img src="/Assets/images/Implementation.svg" alt="Implementation" class="pages-image">
+      <p>In the implementation phase, our experts bring your strategy to life, managing every detail with precision. From content creation to campaign execution, we take charge of all aspects to ensure smooth delivery and maximum impact. <a href="./company/testimonials.html" class="cta-link">Read what our clients have to say.</a></p>
+    </div>
+
+    <!-- Step 4: Results & Optimization -->
+    <div class="mobile-step">
+      <h3>Step 4: Results & Optimization</h3>
+      <img src="/Assets/images/Results & Optimization.svg" alt="Results & Optimization" class="pages-image">
+      <p>Our commitment doesn’t end with implementation. We continuously monitor performance, analyze data, and refine your strategy to ensure optimal results. Through ongoing optimization, we adapt to market changes, helping your business not just achieve but exceed its goals. <a href="./case-studies" class="cta-link">See detailed case studies of our optimized results.</a></p>
+    </div>
+
+    <!-- Two Button Call to Action -->
+    <div class="two-btn">
+      <button class="primarybtn"><a href="./Services">Services</a></button>
+      <button class="secondary-btn"><a href="./Pricing">Pricing <i class="fas fa-arrow-right"></i></a></button>
+    </div>
+  </div>
+</section>
+
+
+<!-- Results Speak for Themselves Section -->
+<section class="results-section">
+  <div class="inner-container">
+    <!-- Section Heading -->
+    <div class="centred-text">
+      <h2>Results Speak for Themselves</h2>
+      <p>We pride ourselves on delivering measurable results that drive growth and success. Here's a snapshot of what we've achieved for our clients.</p>
+    </div>
+
+    <!-- Statistics Boxes Using Global Four-Grid Layout -->
+    <div class="four-grid">
+      <div class="stat-box">
+        <h3>150%</h3>
+        <p>Increase in Organic Traffic</p>
+      </div>
+      <div class="stat-box">
+        <h3>200+</h3>
+        <p>Successful Campaigns</p>
+      </div>
+      <div class="stat-box">
+        <h3>98%</h3>
+        <p>Client Satisfaction Rate</p>
+      </div>
+      <div class="stat-box">
+        <h3>5X</h3>
+        <p>Return on Investment</p>
+      </div>
+    </div>
+
+    <!-- Social Proof Area -->
+    <div class="social-proof">
+      <h3>Trusted by Leading Brands</h3>
+      <div class="logos-grid">
+        <img src="./Assets/images/ahrefs logo.svg" alt="Brand Logo 1">
+        <img src="./Assets/images/drift logo.svg" alt="Brand Logo 2">
+        <img src="./Assets/images/business insider.svg" alt="Brand Logo 3">
+        <img src="./Assets/images/semrum logo.svg" alt="Brand Logo 4">
+      </div>
+    </div>
+
+    <!-- Testimonials Section -->
+    <div class="testimonials-section">
+      <h3>What Our Clients Say</h3>
+      <div class="testimonials-grid">
+        <div class="testimonial">
+          <p>"Working with MarketMinds transformed our business. The team’s expertise and dedication were evident in every step of the process."</p>
+          <h4>- Harry D, COO Drift</h4>
+        </div>
+        <div class="testimonial">
+          <p>"Our traffic and sales increased significantly thanks to their strategic approach and insightful guidance. Highly recommend!"</p>
+          <h4>- Chalse J, Outreach Target</h4>
+        </div>
+        <div class="testimonial">
+          <p>"The personalized service and attention to detail made a huge difference. We felt supported throughout and achieved all our goals."</p>
+          <h4>- Petter M, Director Cnet</h4>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Call to Action Section -->
+<section class="cta-section">
+  <div class="inner-container">
+    <div class="cta-content">
+      <h2>Ready to See Results Like These?</h2>
+      <p>Don’t miss the opportunity to elevate your business. Connect with us today to start your journey toward success.</p>
+      <!-- Using Global Two-Button Div -->
+      <div class="two-btn">
+        <button class="primary-btn">
+          <a href="./company/book-call.html">Book Your Free Consultation</a>
+        </button>
+        <button class="secondary-btn">
+          <a href="./Services">Explore Our Services</a>
+        </button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!---------articiles section-->
+<section class="articles-section">
+  <div class="inner-container">
+    <div class="centred-text">
+      <h2>Explore Our Comprehensive Guides</h2>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, ea distinctio porro nemo delectus explicabo eveniet mollitia maiores minus reprehenderit. Atque ad odio exercitationem neque sed magni deleniti iure numquam!</p>
+    </div>
+    
+    <!-- Articles Container to wrap the four-grid -->
+    <div class="articles-container">
+      <div class="four-grid">
+        <!-- First Article -->
+        <div class="articles-contents">
+          <img src="/Assets/images/1.svg" alt="" class="featured-image">
+          <h3 class="archive-title">Comprehensive guide to SEO</h3>
+          <p class="exerpt">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Exercitationem quia illo natus quidem excepturi dolor perspiciatis eum dignissimos vel omnis. Excepturi, ullam deleniti aut veniam eos hic dolores minima quidem.</p>
+          <a href="./articles/" class="read-more-btn">Read more</a>
+        </div>
+
+        <!-- Second Article -->
+        <div class="articles-contents">
+          <img src="/Assets/images/1.svg" alt="" class="featured-image">
+          <h3 class="archive-title">Content Marketing: Ultimate Guide</h3>
+          <p class="exerpt">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Exercitationem quia illo natus quidem excepturi dolor perspiciatis eum dignissimos vel omnis. Excepturi, ullam deleniti aut veniam eos hic dolores minima quidem.</p>
+          <a href="./articles/" class="read-more-btn">Read more</a>
+        </div>
+
+        <!-- Third Article -->
+        <div class="articles-contents">
+          <img src="/Assets/images/1.svg" alt="" class="featured-image">
+          <h3 class="archive-title">Guide to PPC</h3>
+          <p class="exerpt">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Exercitationem quia illo natus quidem excepturi dolor perspiciatis eum dignissimos vel omnis. Excepturi, ullam deleniti aut veniam eos hic dolores minima quidem.</p>
+          <a href="./articles/" class="read-more-btn">Read more</a>
+        </div>
+
+        <!-- Fourth Article -->
+        <div class="articles-contents">
+          <img src="/Assets/images/1.svg" alt="" class="featured-image">
+          <h3 class="archive-title">Email Marketing Guide</h3>
+          <p class="exerpt">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Exercitationem quia illo natus quidem excepturi dolor perspiciatis eum dignissimos vel omnis. Excepturi, ullam deleniti aut veniam eos hic dolores minima quidem.</p>
+          <a href="./articles/" class="read-more-btn">Read more</a>
+        </div>
+      </div>
+      <div class="check-guides">
+        <button class="secondary-btn"><a href="./articles">Check All Articles</a></button>
+      </div>
+    </div>
+    
+  </div>
+</section>
+
+<!-- Meet Our Team Section -->
+<section class="team-section">
+  <div class="inner-container">
+    <div class="centred-text">
+      <h2>Meet Our Capable Team</h2>
+      <p>Our team of experts is dedicated to delivering the best strategies and insights to help your business thrive. Stay updated with our latest tips and insights by subscribing to our newsletter.</p>
+    </div>
+    <div class="team-grid">
+      <!-- Author 1 -->
+      <div class="team-member">
+        <img src="/Assets/images/john doe.jfif" alt="Author 1" class="author-image">
+        <h5>John Doe</h>
+        <p>SEO Specialist</p>
+      </div>
+
+      <!-- Author 2 -->
+      <div class="team-member">
+        <img src="/Assets/images/jane smith.jfif" alt="Author 2" class="author-image">
+        <h5>Jane Smith</h5>
+        <p>Content Strategist</p>
+      </div>
+
+      <!-- Author 3 -->
+      <div class="team-member">
+        <img src="/Assets/images/michael Brown.jfif" alt="Author 3" class="author-image">
+        <h5>Michael Brown</h5>
+        <p>PPC Expert</p>
+      </div>
+
+      <!-- Author 4 -->
+      <div class="team-member">
+        <img src="/Assets/images/sarah johnson.jfif" alt="Author 4" class="author-image">
+        <h5>Sarah Johnson</h5>
+        <p>Social Media Manager</p>
+      </div>
+    </div>
+
+    <!-- Newsletter Signup Form -->
+    <div class="newsletter-signup">
+      <h3>Stay Connected with Us</h3>
+      <p>Subscribe to our newsletter for the latest updates, tips, and exclusive content.</p>
+      <form class="signup-form">
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <button type="submit" class="subscribe-btn">Subscribe</button>
+        <span class="disclaimer-on-forms">Pure value no spam content <a href="./company/privacy.html">Privacy policy</a></span>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!---------Blog  section-->
+<section class="articles-section">
+  <div class="inner-container">
+    <div class="centred-text">
+      <h2>Check Out Our Blog</h2>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, ea distinctio porro nemo delectus explicabo eveniet mollitia maiores minus reprehenderit. Atque ad odio exercitationem neque sed magni deleniti iure numquam!</p>
+    </div>
+    
+    <!-- Articles Container to wrap the four-grid -->
+    <div class="articles-container">
+      <div class="four-grid">
+        <!-- First Article -->
+        <div class="articles-contents">
+          <img src="/Assets/images/1.svg" alt="" class="featured-image">
+          <h3 class="archive-title">Comprehensive guide to SEO</h3>
+          <p class="exerpt">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Exercitationem quia illo natus quidem excepturi dolor perspiciatis eum dignissimos vel omnis. Excepturi, ullam deleniti aut veniam eos hic dolores minima quidem.</p>
+          <a href="./blog/" class="read-more-btn">Read more</a>
+        </div>
+
+        <!-- Second Article -->
+        <div class="articles-contents">
+          <img src="/Assets/images/1.svg" alt="" class="featured-image">
+          <h3 class="archive-title">Content Marketing: Ultimate Guide</h3>
+          <p class="exerpt">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Exercitationem quia illo natus quidem excepturi dolor perspiciatis eum dignissimos vel omnis. Excepturi, ullam deleniti aut veniam eos hic dolores minima quidem.</p>
+          <a href="./blog/" class="read-more-btn">Read more</a>
+        </div>
+
+        <!-- Third Article -->
+        <div class="articles-contents">
+          <img src="/Assets/images/1.svg" alt="" class="featured-image">
+          <h3 class="archive-title">Guide to PPC</h3>
+          <p class="exerpt">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Exercitationem quia illo natus quidem excepturi dolor perspiciatis eum dignissimos vel omnis. Excepturi, ullam deleniti aut veniam eos hic dolores minima quidem.</p>
+          <a href="./blog/" class="read-more-btn">Read more</a>
+        </div>
+
+        <!-- Fourth Article -->
+        <div class="articles-contents">
+          <img src="/Assets/images/1.svg" alt="" class="featured-image">
+          <h3 class="archive-title">Email Marketing Guide</h3>
+          <p class="exerpt">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Exercitationem quia illo natus quidem excepturi dolor perspiciatis eum dignissimos vel omnis. Excepturi, ullam deleniti aut veniam eos hic dolores minima quidem.</p>
+          <a href="./blog/" class="read-more-btn">Read more</a>
+        </div>
+      </div>
+      <div class="check-guides">
+        <button class="secondary-btn"><a href="./blog">Check the Blog</a></button>
+      </div>
+    </div>
+    
+  </div>
+</section>
+
+</main>
 
   <!-- Footer Insertion Point -->
   <div class="footer-insert"></div>
 
-
-  <script src="plugins/header-inject.js" defer></script>
-    <script src="plugins/footer-inject.js" defer></script>
+  <script src="./js/import.js" defer></script>
+  <script src="./js/app.js" type="module" defer></script>
 </body>
 </html>
